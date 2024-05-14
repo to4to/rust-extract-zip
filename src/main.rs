@@ -1,5 +1,6 @@
 use std::fs;
 use std::io;
+use std::iter::zip;
 
 fn main() {
     // println!("Hello, world!");
@@ -23,5 +24,19 @@ fn real_main() -> i32 {
 
 
     let mut archive = zip::ZipArchive::new(file).unwrap();
+
+
+    for i in 0..archive.len(){
+
+        let mut file= archive.by_index(i).unwrap(); 
+
+
+        let outpath=match file.enclosed_name(){
+
+
+            
+        }
+
+    }
 
 }
