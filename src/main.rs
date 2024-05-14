@@ -22,6 +22,6 @@ fn real_main() -> i32 {
     let file =fs::File::open(&fname).unwrap();
 
 
-    zip::
+    let mut archive = zip::ZipArchive::new(file).unwrap();
 
 }
