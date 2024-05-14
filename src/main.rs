@@ -19,5 +19,9 @@ fn real_main() -> i32 {
 
 
     let fname=std::path::Path::new(&*args[1]);
+    let file =fs::File::open(&fname).unwrap();
+
+
+    zip::
 
 }
