@@ -12,5 +12,5 @@ std::process::exit(real_main());
 
 
 fn real_main()->i32{
-    
+    let args:Vec<_>=std::env::args().collect();
 }
