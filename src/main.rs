@@ -46,8 +46,9 @@ fn real_main() -> i32 {
                 if !p.exists() {
                     fs::create_dir_all(p).unwrap();
                 }
-            } {
-                
+            }
+            else {
+                println!("File {} extracted to \"{}\" ({} bytes)", i, outpath.display(),file.size());
             }
 
         }
